@@ -1,25 +1,19 @@
+// collaborated with eric, anthony, daisy, christian, daisy, josh, viviana, richard
+
 import logo from './logo.svg';
 import './App.css';
+import PersonCard from './components/PersonCard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PersonCard lastName = "Mamma" firstName = "Joe" age ={21} hairColor = "Black"/>
+      <PersonCard lastName = "Bravo" firstName = "Johnny" age ={18} hairColor = "Black"/>
+      <PersonCard lastName = "Clevenger" firstName = "Kye" age ={19} hairColor = "Black"/>
+      <PersonCard lastName = "Smith" firstName = "Jerry" age ={37} hairColor = "Black"/>
     </div>
   );
 }
 
 export default App;
+
